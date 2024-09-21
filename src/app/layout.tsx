@@ -1,6 +1,8 @@
 import type { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
 
+import { Toaster } from "sonner";
+
 import "@/styles/global.css";
 
 export const metadata: Metadata = {
@@ -12,6 +14,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <body>{children}</body>
+      <Toaster />
     </html>
   );
 };
