@@ -1,9 +1,11 @@
 import type { FC, PropsWithChildren } from "react";
 
+import { Navbar } from "../navbar";
+
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
-      <div>NavBar</div>
+      <Navbar />
       <main>{children}</main>
     </>
   );
